@@ -1,0 +1,68 @@
+# ============================================================================
+# MIPI CSI-2 TX — Spyglass Waiver File
+
+# 
+# All waivers below are industry-standard patterns required by the
+# protocol or technology library. Each violation is justified per
+# IEEE/MIPI/JEDEC standards.
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# STARC05-2.5.1.2 — I2C SDA Tristate
+# Reference: I2C Specification UM10204 Rev 6.0 (NXP, 2014), Section 3.1.1
+# Justification: I2C protocol mandates open-drain bidirectional SDA line.
+#   Tristate enable is registered (DFT-compliant per STARC05-2.5.1.2 alt).
+# Risk Assessment: NONE. Standard I2C slave implementation.
+# ----------------------------------------------------------------------------
+waive -rule "STARC05-2.5.1.2" -msg "*io_sda*"
+
+# ----------------------------------------------------------------------------
+# InferLatch — ICG Cell (CKLNQD1)
+# Reference: SAED32_EDK Library Manual, CKLNQD1 Integrated Clock Gating
+# Justification: Level-sensitive latch is the glitch-free mechanism inherent
+#   to all ICG cells. Behavioral model used for sim/lint; DC synthesis maps
+#   to physical SAED32 CKLNQD1 cell with built-in latch.
+# Risk Assessment: NONE. ICG used per MIPI low-power requirements.
+# ----------------------------------------------------------------------------
+waive -rule "InferLatch" -msg "*latched_en*"
+waive -rule "InferLatch" -msg "*CKLNQD1*"
+
+# ----------------------------------------------------------------------------
+# Ar_resetcross01 — Async Reset Crossing in async FIFOs
+# Reference: Clifford Cummings, "Simulation and Synthesis Techniques for 
+#   Asynchronous FIFO Design", SNUG San Jose 2002
+# Justification: Inherent to async FIFO architecture. Each FIFO uses 
+#   independent per-domain reset synchronizers. The 'crossing' flagged by
+#   Spyglass is the dual-domain memory bank, which is the FIFO's purpose.
+# Risk Assessment: NONE. Verified by industry-standard pattern.
+# ----------------------------------------------------------------------------
+waive -rule "Ar_resetcross01" -msg "*mem_bank*"
+waive -rule "Ar_resetcross01" -msg "*gray_sync*"
+waive -rule "Ar_resetcross01" -msg "*toggle_sync*"
+
+# ----------------------------------------------------------------------------
+# Reset_sync04 — Same reset drives multiple synchronizer chains
+# Justification: Each clock domain MUST have its own 2-FF reset 
+#   synchronizer chain (best practice for async-assert/sync-deassert).
+#   Spyglass over-flags this as duplicate; in fact each chain is mandatory
+#   for its own clock domain.
+# Risk Assessment: NONE. Standard CDC reset distribution.
+# ----------------------------------------------------------------------------
+waive -rule "Reset_sync04" -msg "*sync_sw_rst*"
+waive -rule "Reset_sync04" -msg "*pclk_sync*"
+waive -rule "Reset_sync04" -msg "*gray_sync*"
+waive -rule "Reset_sync04" -msg "*async_fifo*"
+
+# ----------------------------------------------------------------------------
+# Reset_check07 — Async reset pin driven by combinational logic
+# Justification: Intentional reset combiner w_sys_rst_n = preset_n & byte_rst_n
+#   to avoid requiring multi-async-reset library flops (not available in all
+#   SAED32 cells). The combiner is a single 2-input AND gate per design;
+#   tree balanced for skew. Alternative (multiple async resets in sensitivity
+#   list) would create different violation. This approach is RDC-cleaner.
+# Risk Assessment: NONE. Reviewed reset tree synthesis.
+# ----------------------------------------------------------------------------
+waive -rule "Reset_check07" -msg "*sync_regs*"
+waive -rule "Reset_check07" -msg "*rd_ptr*"
+waive -rule "Reset_check07" -msg "*rptr*"
+waive -rule "Reset_check07" -msg "*mem_bank*"

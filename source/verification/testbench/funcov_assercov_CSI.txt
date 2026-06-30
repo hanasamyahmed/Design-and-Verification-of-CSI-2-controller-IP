@@ -1,0 +1,39 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /tb_mipi_system_loopback/u_sva_mon
+=== Design Unit: work.csi_sva
+=================================================================================
+
+Directive Coverage:
+    Directives                       3         0         3     0.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/tb_mipi_system_loopback/u_sva_mon/cover__rx_stream_terminates 
+                                         csi_sva Verilog  SVA  csi_sva.sv(112)    0 ZERO      
+/tb_mipi_system_loopback/u_sva_mon/cover__tx_valid_low_after_reset 
+                                         csi_sva Verilog  SVA  csi_sva.sv(100)    0 ZERO      
+/tb_mipi_system_loopback/u_sva_mon/cover__rx_sof_single_beat 
+                                         csi_sva Verilog  SVA  csi_sva.sv(57)     0 ZERO      
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/tb_mipi_system_loopback/u_sva_mon/cover__rx_stream_terminates 
+                                         csi_sva Verilog  SVA  csi_sva.sv(112)    0 ZERO      
+/tb_mipi_system_loopback/u_sva_mon/cover__tx_valid_low_after_reset 
+                                         csi_sva Verilog  SVA  csi_sva.sv(100)    0 ZERO      
+/tb_mipi_system_loopback/u_sva_mon/cover__rx_sof_single_beat 
+                                         csi_sva Verilog  SVA  csi_sva.sv(57)     0 ZERO      
+
+TOTAL DIRECTIVE COVERAGE: 0.00%  COVERS: 3
+
+Total Coverage By Instance (filtered view): 0.00%
+

@@ -1,0 +1,127 @@
+# ============================================================================
+# File Name     : tx_mac_constraints.sgdc
+# Project       : MIPI CSI-2 TX — Clean RTL Pass
+# ============================================================================
+
+current_design mipi_tx_top
+
+# ----------------------------------------------------------------------------
+# 1. Clock Definitions
+# ----------------------------------------------------------------------------
+clock -name "byte_clk"         -domain byte_domain -period 2.85   -edge {0 1.425}
+clock -name "ppi_tx_ByteClkHS" -domain tx_domain   -period 11.42  -edge {0 5.71}
+clock -name "pixel_clk"        -domain pix_domain  -period 2.85   -edge {0 1.425}
+clock -name "pclk"             -domain apb_domain  -period 20.0   -edge {0 10.0}
+clock -name "ppi_tx_TxClkEsc"  -domain esc_domain  -period 50.0   -edge {0 25.0}
+
+# ----------------------------------------------------------------------------
+# 2. Reset Definitions (2 primary async resets)
+# ----------------------------------------------------------------------------
+reset -name "preset_n"   -value 0 -async
+reset -name "byte_rst_n" -value 0 -async
+
+# ----------------------------------------------------------------------------
+# 3. I/O Port Clock Domain Associations
+# ----------------------------------------------------------------------------
+# APB Domain
+input  -name "tx_apb_paddr"   -clock "pclk"
+input  -name "tx_apb_psel"    -clock "pclk"
+input  -name "tx_apb_penable" -clock "pclk"
+input  -name "tx_apb_pwrite"  -clock "pclk"
+input  -name "tx_apb_pwdata"  -clock "pclk"
+output -name "tx_apb_prdata"  -clock "pclk"
+output -name "tx_apb_pready"  -clock "pclk"
+
+# I2C (on pclk)
+input  -name "i2c_scl" -clock "pclk"
+input  -name "i2c_sda" -clock "pclk"
+
+# Pixel Domain
+input  -name "tx_axis_tdata"  -clock "pixel_clk"
+input  -name "tx_axis_tvalid" -clock "pixel_clk"
+input  -name "tx_axis_tuser"  -clock "pixel_clk"
+input  -name "tx_axis_tlast"  -clock "pixel_clk"
+output -name "tx_axis_tready" -clock "pixel_clk"
+
+# TX HS Domain
+output -name "ppi_tx_DataHS_*"   -clock "ppi_tx_ByteClkHS"
+output -name "ppi_tx_ValidHS_*"  -clock "ppi_tx_ByteClkHS"
+output -name "ppi_tx_RequestHS"  -clock "ppi_tx_ByteClkHS"
+input  -name "ppi_tx_ReadyHS"    -clock "ppi_tx_ByteClkHS"
+input  -name "ppi_tx_ClkReadyHS" -clock "ppi_tx_ByteClkHS"
+
+# Byte (MAC) Domain
+output -name "ppi_tx_ClkRequestHS" -clock "byte_clk"
+output -name "tx_lane*"            -clock "byte_clk"
+output -name "tx_req_hs_out"       -clock "byte_clk"
+output -name "ppi_tx_TxUlpmClk"    -clock "byte_clk"
+output -name "ppi_tx_TxRequestEsc" -clock "byte_clk"
+output -name "ppi_tx_TxUlpmEsc"    -clock "byte_clk"
+
+# Escape Clock Port
+input  -name "ppi_tx_TxClkEsc" -clock "ppi_tx_TxClkEsc"
+
+# ----------------------------------------------------------------------------
+# 4. Formal Setup & Quasi-Static Signals
+# ----------------------------------------------------------------------------
+set_case_analysis -name "test_mode" -value 0
+
+quasi_static -name "cfg_active_lanes"
+quasi_static -name "cfg_frame_lines"
+quasi_static -name "ppi_tx_Shutdown"
+
+quasi_static -name "w_cfg_wc"
+quasi_static -name "w_cfg_vc_id"
+quasi_static -name "w_cfg_data_type"
+quasi_static -name "w_i2c_line_number"
+
+quasi_static -name "w_tx_en"
+quasi_static -name "w_sw_rst"
+quasi_static -name "w_scram_enb"
+quasi_static -name "w_crc_enb"
+
+# ----------------------------------------------------------------------------
+# 5. CDC False Paths
+# ----------------------------------------------------------------------------
+
+# 5.a AXI Streaming TX async FIFO
+cdc_false_path -to "u_axi_tx.u_fifo.wptr_gray_sync1*" -to_type flop
+cdc_false_path -to "u_axi_tx.u_fifo.rptr_gray_sync1*" -to_type flop
+cdc_false_path -from "u_axi_tx.u_fifo.mem_bank0*" -from_type flop
+cdc_false_path -from "u_axi_tx.u_fifo.mem_bank1*" -from_type flop
+fifo -memory "u_axi_tx.u_fifo.mem_bank0*"
+fifo -memory "u_axi_tx.u_fifo.mem_bank1*"
+
+# 5.b TLAST toggle synchronizer
+cdc_false_path -from "u_axi_tx.tlast_toggle_wr"       -from_type flop \
+               -to   "u_axi_tx.tlast_toggle_sync_rd*" -to_type flop
+
+# 5.c PPI TX async FIFOs
+cdc_false_path -to "u_tx.fifo*.rd_ptr_gray_sync1*" -to_type flop
+cdc_false_path -to "u_tx.fifo*.wr_ptr_gray_sync1*" -to_type flop
+cdc_false_path -from "u_tx.fifo*.mem*"             -from_type flop
+fifo -memory "u_tx.fifo*.mem*"
+
+# 5.d Pixel-domain config synchronizers (pclk -> pixel_clk)
+cdc_false_path -to "pix_sync_tx_en*"   -to_type flop
+cdc_false_path -to "pix_cfg_dt_sync1*" -to_type flop
+
+# 5.e Byte-domain control synchronizers (pclk -> byte_clk)
+cdc_false_path -to "byte_sync_crc_enb*"   -to_type flop
+cdc_false_path -to "byte_sync_scram_enb*" -to_type flop
+
+# 5.f Software-Reset Synchronizers
+cdc_false_path -to "sync_sw_rst_pix*"  -to_type flop
+cdc_false_path -to "sync_sw_rst_byte*" -to_type flop
+cdc_false_path -to "sync_sw_rst_tx*"   -to_type flop
+
+# 5.g I2C input synchronizers (byte_clk -> pclk)
+# pclk_sync_pkt_valid       : 2-FF sync for level signal w_pkt_valid
+# pclk_sync_byte_pd_toggle  : toggle-based pulse sync for w_byte_pd
+cdc_false_path -to "pclk_sync_pkt_valid*"      -to_type flop
+cdc_false_path -to "pclk_sync_byte_pd_toggle*" -to_type flop
+
+# ----------------------------------------------------------------------------
+# 6. Coherency Filters & Lint Sinks
+# ----------------------------------------------------------------------------
+cdc_filter_coherency -stop_points "u_tx.w_dummy_sink"

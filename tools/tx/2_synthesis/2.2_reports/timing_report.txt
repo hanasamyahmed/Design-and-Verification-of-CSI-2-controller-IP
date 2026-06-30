@@ -1,0 +1,2053 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'mipi_tx_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : mipi_tx_top
+Version: X-2025.06-SP4
+Date   : Tue Apr 28 13:13:28 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_tx_fifo1_wr_ptr_gray_reg_0_
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo1_mem_reg_0__1_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_tx_fifo1_wr_ptr_gray_reg_0_/CLK (DFFASRX1_RVT)        0.00       0.00 r
+  u_tx_fifo1_wr_ptr_gray_reg_0_/Q (DFFASRX1_RVT)          0.11       0.11 f
+  U2589/SO (HADDX1_RVT)                                   0.38       0.49 r
+  U2590/Y (AO222X1_RVT)                                   0.24       0.73 r
+  U4661/Y (AND2X1_RVT)                                    0.29       1.02 r
+  U4662/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4663/Y (NAND2X0_RVT)                                   0.23       1.60 f
+  U4665/Y (NBUFFX2_RVT)                                   0.28       1.87 f
+  U4673/Y (AO22X1_RVT)                                    0.35       2.22 f
+  u_tx_fifo1_mem_reg_0__1_/D (DFFARX1_RVT)                0.15       2.37 f
+  data arrival time                                                  2.37
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo1_mem_reg_0__1_/CLK (DFFARX1_RVT)              0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_tx_fifo1_wr_ptr_gray_reg_0_
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo1_mem_reg_0__7_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_tx_fifo1_wr_ptr_gray_reg_0_/CLK (DFFASRX1_RVT)        0.00       0.00 r
+  u_tx_fifo1_wr_ptr_gray_reg_0_/Q (DFFASRX1_RVT)          0.11       0.11 f
+  U2589/SO (HADDX1_RVT)                                   0.38       0.49 r
+  U2590/Y (AO222X1_RVT)                                   0.24       0.73 r
+  U4661/Y (AND2X1_RVT)                                    0.29       1.02 r
+  U4662/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4663/Y (NAND2X0_RVT)                                   0.23       1.60 f
+  U4665/Y (NBUFFX2_RVT)                                   0.28       1.87 f
+  U4667/Y (AO22X1_RVT)                                    0.35       2.22 f
+  u_tx_fifo1_mem_reg_0__7_/D (DFFARX1_RVT)                0.15       2.37 f
+  data arrival time                                                  2.37
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo1_mem_reg_0__7_/CLK (DFFARX1_RVT)              0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_tx_fifo1_wr_ptr_gray_reg_0_
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo1_mem_reg_0__6_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_tx_fifo1_wr_ptr_gray_reg_0_/CLK (DFFASRX1_RVT)        0.00       0.00 r
+  u_tx_fifo1_wr_ptr_gray_reg_0_/Q (DFFASRX1_RVT)          0.11       0.11 f
+  U2589/SO (HADDX1_RVT)                                   0.38       0.49 r
+  U2590/Y (AO222X1_RVT)                                   0.24       0.73 r
+  U4661/Y (AND2X1_RVT)                                    0.29       1.02 r
+  U4662/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4663/Y (NAND2X0_RVT)                                   0.23       1.60 f
+  U4665/Y (NBUFFX2_RVT)                                   0.28       1.87 f
+  U4668/Y (AO22X1_RVT)                                    0.35       2.22 f
+  u_tx_fifo1_mem_reg_0__6_/D (DFFARX1_RVT)                0.15       2.37 f
+  data arrival time                                                  2.37
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo1_mem_reg_0__6_/CLK (DFFARX1_RVT)              0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_tx_fifo1_wr_ptr_gray_reg_0_
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo1_mem_reg_0__0_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_tx_fifo1_wr_ptr_gray_reg_0_/CLK (DFFASRX1_RVT)        0.00       0.00 r
+  u_tx_fifo1_wr_ptr_gray_reg_0_/Q (DFFASRX1_RVT)          0.11       0.11 f
+  U2589/SO (HADDX1_RVT)                                   0.38       0.49 r
+  U2590/Y (AO222X1_RVT)                                   0.24       0.73 r
+  U4661/Y (AND2X1_RVT)                                    0.29       1.02 r
+  U4662/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4663/Y (NAND2X0_RVT)                                   0.23       1.60 f
+  U4665/Y (NBUFFX2_RVT)                                   0.28       1.87 f
+  U4666/Y (AO22X1_RVT)                                    0.35       2.22 f
+  u_tx_fifo1_mem_reg_0__0_/D (DFFARX1_RVT)                0.15       2.37 f
+  data arrival time                                                  2.37
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo1_mem_reg_0__0_/CLK (DFFARX1_RVT)              0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_tx_fifo1_wr_ptr_gray_reg_0_
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo1_mem_reg_0__5_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_tx_fifo1_wr_ptr_gray_reg_0_/CLK (DFFASRX1_RVT)        0.00       0.00 r
+  u_tx_fifo1_wr_ptr_gray_reg_0_/Q (DFFASRX1_RVT)          0.11       0.11 f
+  U2589/SO (HADDX1_RVT)                                   0.38       0.49 r
+  U2590/Y (AO222X1_RVT)                                   0.24       0.73 r
+  U4661/Y (AND2X1_RVT)                                    0.29       1.02 r
+  U4662/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4663/Y (NAND2X0_RVT)                                   0.23       1.60 f
+  U4665/Y (NBUFFX2_RVT)                                   0.28       1.87 f
+  U4669/Y (AO22X1_RVT)                                    0.35       2.22 f
+  u_tx_fifo1_mem_reg_0__5_/D (DFFARX1_RVT)                0.15       2.37 f
+  data arrival time                                                  2.37
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo1_mem_reg_0__5_/CLK (DFFARX1_RVT)              0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_tx_fifo1_wr_ptr_gray_reg_0_
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo1_mem_reg_0__3_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_tx_fifo1_wr_ptr_gray_reg_0_/CLK (DFFASRX1_RVT)        0.00       0.00 r
+  u_tx_fifo1_wr_ptr_gray_reg_0_/Q (DFFASRX1_RVT)          0.11       0.11 f
+  U2589/SO (HADDX1_RVT)                                   0.38       0.49 r
+  U2590/Y (AO222X1_RVT)                                   0.24       0.73 r
+  U4661/Y (AND2X1_RVT)                                    0.29       1.02 r
+  U4662/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4663/Y (NAND2X0_RVT)                                   0.23       1.60 f
+  U4665/Y (NBUFFX2_RVT)                                   0.28       1.87 f
+  U4671/Y (AO22X1_RVT)                                    0.35       2.22 f
+  u_tx_fifo1_mem_reg_0__3_/D (DFFARX1_RVT)                0.15       2.37 f
+  data arrival time                                                  2.37
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo1_mem_reg_0__3_/CLK (DFFARX1_RVT)              0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_tx_fifo1_wr_ptr_gray_reg_0_
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo1_mem_reg_0__2_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_tx_fifo1_wr_ptr_gray_reg_0_/CLK (DFFASRX1_RVT)        0.00       0.00 r
+  u_tx_fifo1_wr_ptr_gray_reg_0_/Q (DFFASRX1_RVT)          0.11       0.11 f
+  U2589/SO (HADDX1_RVT)                                   0.38       0.49 r
+  U2590/Y (AO222X1_RVT)                                   0.24       0.73 r
+  U4661/Y (AND2X1_RVT)                                    0.29       1.02 r
+  U4662/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4663/Y (NAND2X0_RVT)                                   0.23       1.60 f
+  U4665/Y (NBUFFX2_RVT)                                   0.28       1.87 f
+  U4672/Y (AO22X1_RVT)                                    0.35       2.22 f
+  u_tx_fifo1_mem_reg_0__2_/D (DFFARX1_RVT)                0.15       2.37 f
+  data arrival time                                                  2.37
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo1_mem_reg_0__2_/CLK (DFFARX1_RVT)              0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_dist_o_lane3_vld_reg
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo3_mem_reg_2__3_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dist_o_lane3_vld_reg/CLK (DFFARX2_RVT)                0.00       0.00 r
+  u_dist_o_lane3_vld_reg/Q (DFFARX2_RVT)                  0.12       0.12 r
+  U4293/Y (AO222X1_RVT)                                   0.60       0.72 r
+  U4294/Y (AND2X1_RVT)                                    0.30       1.02 r
+  U4295/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4316/Y (NAND3X1_RVT)                                   0.24       1.61 f
+  U4317/Y (INVX0_RVT)                                     0.22       1.83 r
+  U4324/Y (AO22X1_RVT)                                    0.38       2.21 r
+  u_tx_fifo3_mem_reg_2__3_/D (DFFASRX1_RVT)               0.15       2.36 r
+  data arrival time                                                  2.36
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo3_mem_reg_2__3_/CLK (DFFASRX1_RVT)             0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_dist_o_lane3_vld_reg
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo3_mem_reg_2__2_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dist_o_lane3_vld_reg/CLK (DFFARX2_RVT)                0.00       0.00 r
+  u_dist_o_lane3_vld_reg/Q (DFFARX2_RVT)                  0.12       0.12 r
+  U4293/Y (AO222X1_RVT)                                   0.60       0.72 r
+  U4294/Y (AND2X1_RVT)                                    0.30       1.02 r
+  U4295/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4316/Y (NAND3X1_RVT)                                   0.24       1.61 f
+  U4317/Y (INVX0_RVT)                                     0.22       1.83 r
+  U4325/Y (AO22X1_RVT)                                    0.38       2.21 r
+  u_tx_fifo3_mem_reg_2__2_/D (DFFASRX1_RVT)               0.15       2.36 r
+  data arrival time                                                  2.36
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo3_mem_reg_2__2_/CLK (DFFASRX1_RVT)             0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_dist_o_lane3_vld_reg
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: u_tx_fifo3_mem_reg_6__2_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: SYS_CLK_CRITICAL
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dist_o_lane3_vld_reg/CLK (DFFARX2_RVT)                0.00       0.00 r
+  u_dist_o_lane3_vld_reg/Q (DFFARX2_RVT)                  0.12       0.12 r
+  U4293/Y (AO222X1_RVT)                                   0.60       0.72 r
+  U4294/Y (AND2X1_RVT)                                    0.30       1.02 r
+  U4295/Y (AND2X1_RVT)                                    0.35       1.37 r
+  U4358/Y (NAND3X1_RVT)                                   0.24       1.61 f
+  U4359/Y (INVX0_RVT)                                     0.22       1.83 r
+  U4367/Y (AO22X1_RVT)                                    0.38       2.21 r
+  u_tx_fifo3_mem_reg_6__2_/D (DFFASRX1_RVT)               0.15       2.36 r
+  data arrival time                                                  2.36
+
+  clock sys_clk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  u_tx_fifo3_mem_reg_6__2_/CLK (DFFASRX1_RVT)             0.00       2.40 r
+  library setup time                                     -0.03       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_0_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_p2b_o_byte_data_reg_0_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_0_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_0_/Q (DFFARX1_RVT)             0.10       0.10 r
+  u_axi_tx_u_fifo/U8356/Y (AND3X1_RVT)                    0.31       0.41 r
+  u_axi_tx_u_fifo/U8616/Y (AND2X4_RVT)                    0.42       0.83 r
+  u_axi_tx_u_fifo/U8971/Y (NBUFFX2_RVT)                   1.95       2.78 r
+  u_axi_tx_u_fifo/U8972/Y (NBUFFX2_RVT)                   1.56       4.34 r
+  u_axi_tx_u_fifo/U12637/Y (NBUFFX2_RVT)                  1.62       5.96 r
+  u_axi_tx_u_fifo/U29152/Y (AO22X1_RVT)                   1.57       7.54 r
+  u_axi_tx_u_fifo/U29156/Y (NOR4X1_RVT)                   0.22       7.75 f
+  u_axi_tx_u_fifo/U29172/Y (NAND4X0_RVT)                  0.20       7.96 r
+  u_axi_tx_u_fifo/U29173/Y (NOR4X1_RVT)                   0.23       8.19 f
+  u_axi_tx_u_fifo/U29259/Y (OA22X1_RVT)                   0.18       8.37 f
+  u_axi_tx_u_fifo/U29260/Y (NAND4X0_RVT)                  0.18       8.55 r
+  u_axi_tx_u_fifo/U29261/Y (OR3X1_RVT)                    0.22       8.77 r
+  u_axi_tx_u_fifo/U29262/Y (AO22X1_RVT)                   0.20       8.97 r
+  u_axi_tx_u_fifo/rdata[0] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       8.97 r
+  U2891/Y (AO222X1_RVT)                                   0.40       9.37 r
+  U2892/Y (NAND2X0_RVT)                                   0.15       9.52 f
+  U2893/Y (NAND3X0_RVT)                                   0.17       9.68 r
+  u_p2b_o_byte_data_reg_0_/D (DFFASRX1_RVT)               0.15       9.83 r
+  data arrival time                                                  9.83
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_p2b_o_byte_data_reg_0_/CLK (DFFASRX1_RVT)             0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -9.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_0_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_p2b_line_count_reg_4_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_0_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_0_/QN (DFFARX1_RVT)            0.08       0.08 r
+  u_axi_tx_u_fifo/U8492/Y (AND3X1_RVT)                    0.29       0.37 r
+  u_axi_tx_u_fifo/U8493/Y (NBUFFX2_RVT)                   0.53       0.89 r
+  u_axi_tx_u_fifo/U8722/Y (AND2X1_RVT)                    0.37       1.27 r
+  u_axi_tx_u_fifo/U3894/Y (INVX0_RVT)                     0.86       2.13 f
+  u_axi_tx_u_fifo/U3895/Y (INVX4_RVT)                     1.07       3.19 r
+  u_axi_tx_u_fifo/U10799/Y (NBUFFX2_RVT)                  1.84       5.03 r
+  u_axi_tx_u_fifo/U30470/Y (AO22X1_RVT)                   1.57       6.61 r
+  u_axi_tx_u_fifo/U30471/Y (NOR3X0_RVT)                   0.23       6.83 f
+  u_axi_tx_u_fifo/U30477/Y (NAND4X0_RVT)                  0.18       7.02 r
+  u_axi_tx_u_fifo/U6960/Y (OR4X1_RVT)                     0.24       7.25 r
+  u_axi_tx_u_fifo/U30496/Y (OR3X1_RVT)                    0.19       7.44 r
+  u_axi_tx_u_fifo/U30497/Y (AOI22X1_RVT)                  0.20       7.64 f
+  u_axi_tx_u_fifo/U30662/Y (NAND3X0_RVT)                  0.17       7.81 r
+  u_axi_tx_u_fifo/U30663/Y (OR3X1_RVT)                    0.22       8.03 r
+  u_axi_tx_u_fifo/U30664/Y (AO22X1_RVT)                   0.19       8.22 r
+  u_axi_tx_u_fifo/rdata[24] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       8.22 r
+  U2537/Y (OA21X1_RVT)                                    0.28       8.50 r
+  U2548/Y (AND2X1_RVT)                                    0.29       8.79 r
+  U2563/Y (NBUFFX2_RVT)                                   0.27       9.06 r
+  U3848/Y (AND3X1_RVT)                                    0.39       9.45 r
+  U3849/Y (AO222X1_RVT)                                   0.21       9.66 r
+  u_p2b_line_count_reg_4_/D (DFFARX1_RVT)                 0.15       9.80 r
+  data arrival time                                                  9.80
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_p2b_line_count_reg_4_/CLK (DFFARX1_RVT)               0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -9.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_0_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_p2b_line_count_reg_8_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_0_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_0_/QN (DFFARX1_RVT)            0.08       0.08 r
+  u_axi_tx_u_fifo/U8492/Y (AND3X1_RVT)                    0.29       0.37 r
+  u_axi_tx_u_fifo/U8493/Y (NBUFFX2_RVT)                   0.53       0.89 r
+  u_axi_tx_u_fifo/U8722/Y (AND2X1_RVT)                    0.37       1.27 r
+  u_axi_tx_u_fifo/U3894/Y (INVX0_RVT)                     0.86       2.13 f
+  u_axi_tx_u_fifo/U3895/Y (INVX4_RVT)                     1.07       3.19 r
+  u_axi_tx_u_fifo/U10799/Y (NBUFFX2_RVT)                  1.84       5.03 r
+  u_axi_tx_u_fifo/U30470/Y (AO22X1_RVT)                   1.57       6.61 r
+  u_axi_tx_u_fifo/U30471/Y (NOR3X0_RVT)                   0.23       6.83 f
+  u_axi_tx_u_fifo/U30477/Y (NAND4X0_RVT)                  0.18       7.02 r
+  u_axi_tx_u_fifo/U6960/Y (OR4X1_RVT)                     0.24       7.25 r
+  u_axi_tx_u_fifo/U30496/Y (OR3X1_RVT)                    0.19       7.44 r
+  u_axi_tx_u_fifo/U30497/Y (AOI22X1_RVT)                  0.20       7.64 f
+  u_axi_tx_u_fifo/U30662/Y (NAND3X0_RVT)                  0.17       7.81 r
+  u_axi_tx_u_fifo/U30663/Y (OR3X1_RVT)                    0.22       8.03 r
+  u_axi_tx_u_fifo/U30664/Y (AO22X1_RVT)                   0.19       8.22 r
+  u_axi_tx_u_fifo/rdata[24] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       8.22 r
+  U2537/Y (OA21X1_RVT)                                    0.28       8.50 r
+  U2548/Y (AND2X1_RVT)                                    0.29       8.79 r
+  U2563/Y (NBUFFX2_RVT)                                   0.27       9.06 r
+  U3858/Y (AND3X1_RVT)                                    0.39       9.45 r
+  U3859/Y (AO222X1_RVT)                                   0.21       9.66 r
+  u_p2b_line_count_reg_8_/D (DFFARX1_RVT)                 0.15       9.80 r
+  data arrival time                                                  9.80
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_p2b_line_count_reg_8_/CLK (DFFARX1_RVT)               0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -9.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_0_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_p2b_line_count_reg_10_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_0_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_0_/QN (DFFARX1_RVT)            0.08       0.08 r
+  u_axi_tx_u_fifo/U8492/Y (AND3X1_RVT)                    0.29       0.37 r
+  u_axi_tx_u_fifo/U8493/Y (NBUFFX2_RVT)                   0.53       0.89 r
+  u_axi_tx_u_fifo/U8722/Y (AND2X1_RVT)                    0.37       1.27 r
+  u_axi_tx_u_fifo/U3894/Y (INVX0_RVT)                     0.86       2.13 f
+  u_axi_tx_u_fifo/U3895/Y (INVX4_RVT)                     1.07       3.19 r
+  u_axi_tx_u_fifo/U10799/Y (NBUFFX2_RVT)                  1.84       5.03 r
+  u_axi_tx_u_fifo/U30470/Y (AO22X1_RVT)                   1.57       6.61 r
+  u_axi_tx_u_fifo/U30471/Y (NOR3X0_RVT)                   0.23       6.83 f
+  u_axi_tx_u_fifo/U30477/Y (NAND4X0_RVT)                  0.18       7.02 r
+  u_axi_tx_u_fifo/U6960/Y (OR4X1_RVT)                     0.24       7.25 r
+  u_axi_tx_u_fifo/U30496/Y (OR3X1_RVT)                    0.19       7.44 r
+  u_axi_tx_u_fifo/U30497/Y (AOI22X1_RVT)                  0.20       7.64 f
+  u_axi_tx_u_fifo/U30662/Y (NAND3X0_RVT)                  0.17       7.81 r
+  u_axi_tx_u_fifo/U30663/Y (OR3X1_RVT)                    0.22       8.03 r
+  u_axi_tx_u_fifo/U30664/Y (AO22X1_RVT)                   0.19       8.22 r
+  u_axi_tx_u_fifo/rdata[24] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       8.22 r
+  U2537/Y (OA21X1_RVT)                                    0.28       8.50 r
+  U2548/Y (AND2X1_RVT)                                    0.29       8.79 r
+  U2563/Y (NBUFFX2_RVT)                                   0.27       9.06 r
+  U3863/Y (AND3X1_RVT)                                    0.39       9.45 r
+  U3864/Y (AO222X1_RVT)                                   0.21       9.66 r
+  u_p2b_line_count_reg_10_/D (DFFARX1_RVT)                0.15       9.80 r
+  data arrival time                                                  9.80
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_p2b_line_count_reg_10_/CLK (DFFARX1_RVT)              0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -9.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_0_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_p2b_line_count_reg_12_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_0_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_0_/QN (DFFARX1_RVT)            0.08       0.08 r
+  u_axi_tx_u_fifo/U8492/Y (AND3X1_RVT)                    0.29       0.37 r
+  u_axi_tx_u_fifo/U8493/Y (NBUFFX2_RVT)                   0.53       0.89 r
+  u_axi_tx_u_fifo/U8722/Y (AND2X1_RVT)                    0.37       1.27 r
+  u_axi_tx_u_fifo/U3894/Y (INVX0_RVT)                     0.86       2.13 f
+  u_axi_tx_u_fifo/U3895/Y (INVX4_RVT)                     1.07       3.19 r
+  u_axi_tx_u_fifo/U10799/Y (NBUFFX2_RVT)                  1.84       5.03 r
+  u_axi_tx_u_fifo/U30470/Y (AO22X1_RVT)                   1.57       6.61 r
+  u_axi_tx_u_fifo/U30471/Y (NOR3X0_RVT)                   0.23       6.83 f
+  u_axi_tx_u_fifo/U30477/Y (NAND4X0_RVT)                  0.18       7.02 r
+  u_axi_tx_u_fifo/U6960/Y (OR4X1_RVT)                     0.24       7.25 r
+  u_axi_tx_u_fifo/U30496/Y (OR3X1_RVT)                    0.19       7.44 r
+  u_axi_tx_u_fifo/U30497/Y (AOI22X1_RVT)                  0.20       7.64 f
+  u_axi_tx_u_fifo/U30662/Y (NAND3X0_RVT)                  0.17       7.81 r
+  u_axi_tx_u_fifo/U30663/Y (OR3X1_RVT)                    0.22       8.03 r
+  u_axi_tx_u_fifo/U30664/Y (AO22X1_RVT)                   0.19       8.22 r
+  u_axi_tx_u_fifo/rdata[24] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       8.22 r
+  U2537/Y (OA21X1_RVT)                                    0.28       8.50 r
+  U2548/Y (AND2X1_RVT)                                    0.29       8.79 r
+  U2563/Y (NBUFFX2_RVT)                                   0.27       9.06 r
+  U3868/Y (AND3X1_RVT)                                    0.39       9.45 r
+  U3869/Y (AO222X1_RVT)                                   0.21       9.66 r
+  u_p2b_line_count_reg_12_/D (DFFARX1_RVT)                0.15       9.80 r
+  data arrival time                                                  9.80
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_p2b_line_count_reg_12_/CLK (DFFARX1_RVT)              0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -9.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_0_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_p2b_line_count_reg_6_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_0_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_0_/QN (DFFARX1_RVT)            0.08       0.08 r
+  u_axi_tx_u_fifo/U8492/Y (AND3X1_RVT)                    0.29       0.37 r
+  u_axi_tx_u_fifo/U8493/Y (NBUFFX2_RVT)                   0.53       0.89 r
+  u_axi_tx_u_fifo/U8722/Y (AND2X1_RVT)                    0.37       1.27 r
+  u_axi_tx_u_fifo/U3894/Y (INVX0_RVT)                     0.86       2.13 f
+  u_axi_tx_u_fifo/U3895/Y (INVX4_RVT)                     1.07       3.19 r
+  u_axi_tx_u_fifo/U10799/Y (NBUFFX2_RVT)                  1.84       5.03 r
+  u_axi_tx_u_fifo/U30470/Y (AO22X1_RVT)                   1.57       6.61 r
+  u_axi_tx_u_fifo/U30471/Y (NOR3X0_RVT)                   0.23       6.83 f
+  u_axi_tx_u_fifo/U30477/Y (NAND4X0_RVT)                  0.18       7.02 r
+  u_axi_tx_u_fifo/U6960/Y (OR4X1_RVT)                     0.24       7.25 r
+  u_axi_tx_u_fifo/U30496/Y (OR3X1_RVT)                    0.19       7.44 r
+  u_axi_tx_u_fifo/U30497/Y (AOI22X1_RVT)                  0.20       7.64 f
+  u_axi_tx_u_fifo/U30662/Y (NAND3X0_RVT)                  0.17       7.81 r
+  u_axi_tx_u_fifo/U30663/Y (OR3X1_RVT)                    0.22       8.03 r
+  u_axi_tx_u_fifo/U30664/Y (AO22X1_RVT)                   0.19       8.22 r
+  u_axi_tx_u_fifo/rdata[24] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       8.22 r
+  U2537/Y (OA21X1_RVT)                                    0.28       8.50 r
+  U2548/Y (AND2X1_RVT)                                    0.29       8.79 r
+  U2563/Y (NBUFFX2_RVT)                                   0.27       9.06 r
+  U3853/Y (AND3X1_RVT)                                    0.39       9.45 r
+  U3854/Y (AO222X1_RVT)                                   0.21       9.66 r
+  u_p2b_line_count_reg_6_/D (DFFARX1_RVT)                 0.15       9.80 r
+  data arrival time                                                  9.80
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_p2b_line_count_reg_6_/CLK (DFFARX1_RVT)               0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -9.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_0_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_p2b_o_byte_data_reg_5_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_0_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_0_/Q (DFFARX1_RVT)             0.10       0.10 r
+  u_axi_tx_u_fifo/U8356/Y (AND3X1_RVT)                    0.31       0.41 r
+  u_axi_tx_u_fifo/U8616/Y (AND2X4_RVT)                    0.42       0.83 r
+  u_axi_tx_u_fifo/U8971/Y (NBUFFX2_RVT)                   1.95       2.78 r
+  u_axi_tx_u_fifo/U8972/Y (NBUFFX2_RVT)                   1.56       4.34 r
+  u_axi_tx_u_fifo/U13218/Y (NBUFFX2_RVT)                  1.62       5.96 r
+  u_axi_tx_u_fifo/U20803/Y (AO22X1_RVT)                   1.63       7.59 r
+  u_axi_tx_u_fifo/U20807/Y (NOR4X1_RVT)                   0.22       7.81 f
+  u_axi_tx_u_fifo/U20825/Y (NAND4X0_RVT)                  0.20       8.01 r
+  u_axi_tx_u_fifo/U20826/Y (NOR4X1_RVT)                   0.23       8.25 f
+  u_axi_tx_u_fifo/U20827/Y (OA22X1_RVT)                   0.20       8.44 f
+  u_axi_tx_u_fifo/U20981/Y (NAND3X0_RVT)                  0.17       8.62 r
+  u_axi_tx_u_fifo/U20982/Y (OR3X1_RVT)                    0.22       8.83 r
+  u_axi_tx_u_fifo/U20983/Y (AO22X1_RVT)                   0.19       9.03 r
+  u_axi_tx_u_fifo/rdata[5] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       9.03 r
+  U2866/Y (AO222X1_RVT)                                   0.31       9.33 r
+  U2867/Y (NAND2X0_RVT)                                   0.15       9.48 f
+  U2868/Y (NAND3X0_RVT)                                   0.17       9.65 r
+  u_p2b_o_byte_data_reg_5_/D (DFFASRX1_RVT)               0.15       9.80 r
+  data arrival time                                                  9.80
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_p2b_o_byte_data_reg_5_/CLK (DFFASRX1_RVT)             0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -9.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_0_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_p2b_line_count_reg_15_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_0_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_0_/QN (DFFARX1_RVT)            0.08       0.08 r
+  u_axi_tx_u_fifo/U8492/Y (AND3X1_RVT)                    0.29       0.37 r
+  u_axi_tx_u_fifo/U8493/Y (NBUFFX2_RVT)                   0.53       0.89 r
+  u_axi_tx_u_fifo/U8722/Y (AND2X1_RVT)                    0.37       1.27 r
+  u_axi_tx_u_fifo/U3894/Y (INVX0_RVT)                     0.86       2.13 f
+  u_axi_tx_u_fifo/U3895/Y (INVX4_RVT)                     1.07       3.19 r
+  u_axi_tx_u_fifo/U10799/Y (NBUFFX2_RVT)                  1.84       5.03 r
+  u_axi_tx_u_fifo/U30470/Y (AO22X1_RVT)                   1.57       6.61 r
+  u_axi_tx_u_fifo/U30471/Y (NOR3X0_RVT)                   0.23       6.83 f
+  u_axi_tx_u_fifo/U30477/Y (NAND4X0_RVT)                  0.18       7.02 r
+  u_axi_tx_u_fifo/U6960/Y (OR4X1_RVT)                     0.24       7.25 r
+  u_axi_tx_u_fifo/U30496/Y (OR3X1_RVT)                    0.19       7.44 r
+  u_axi_tx_u_fifo/U30497/Y (AOI22X1_RVT)                  0.20       7.64 f
+  u_axi_tx_u_fifo/U30662/Y (NAND3X0_RVT)                  0.17       7.81 r
+  u_axi_tx_u_fifo/U30663/Y (OR3X1_RVT)                    0.22       8.03 r
+  u_axi_tx_u_fifo/U30664/Y (AO22X1_RVT)                   0.19       8.22 r
+  u_axi_tx_u_fifo/rdata[24] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       8.22 r
+  U2537/Y (OA21X1_RVT)                                    0.28       8.50 r
+  U2548/Y (AND2X1_RVT)                                    0.29       8.79 r
+  U2563/Y (NBUFFX2_RVT)                                   0.27       9.06 r
+  U2568/Y (AO21X1_RVT)                                    0.39       9.45 r
+  U2569/Y (OA222X1_RVT)                                   0.20       9.65 r
+  u_p2b_line_count_reg_15_/D (DFFARX1_RVT)                0.15       9.80 r
+  data arrival time                                                  9.80
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_p2b_line_count_reg_15_/CLK (DFFARX1_RVT)              0.00       9.90 r
+  library setup time                                     -0.03       9.87
+  data required time                                                 9.87
+  --------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -9.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_5_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_axi_tx_lines_in_fifo_reg_2_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_5_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_5_/QN (DFFARX1_RVT)            0.08       0.08 r
+  u_axi_tx_u_fifo/U8424/Y (AND2X1_RVT)                    0.38       0.47 r
+  u_axi_tx_u_fifo/U8453/Y (AND3X1_RVT)                    0.23       0.70 r
+  u_axi_tx_u_fifo/U8499/Y (AND2X1_RVT)                    0.45       1.15 r
+  u_axi_tx_u_fifo/U8500/Y (NBUFFX2_RVT)                   0.83       1.98 r
+  u_axi_tx_u_fifo/U9048/Y (NBUFFX2_RVT)                   1.62       3.60 r
+  u_axi_tx_u_fifo/U9049/Y (NBUFFX2_RVT)                   1.62       5.22 r
+  u_axi_tx_u_fifo/U9545/Y (AO22X1_RVT)                    1.63       6.85 r
+  u_axi_tx_u_fifo/U9548/Y (NOR4X1_RVT)                    0.22       7.07 f
+  u_axi_tx_u_fifo/U9549/Y (NAND4X0_RVT)                   0.18       7.25 r
+  u_axi_tx_u_fifo/U9578/Y (NOR4X1_RVT)                    0.22       7.47 f
+  u_axi_tx_u_fifo/U9579/Y (OA22X1_RVT)                    0.18       7.65 f
+  u_axi_tx_u_fifo/U9580/Y (AND4X1_RVT)                    0.17       7.83 f
+  u_axi_tx_u_fifo/U9581/Y (NAND3X0_RVT)                   0.16       7.99 r
+  u_axi_tx_u_fifo/U10469/Y (AO22X1_RVT)                   0.19       8.18 r
+  u_axi_tx_u_fifo/rdata[25] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       8.18 r
+  U2898/Y (NAND3X0_RVT)                                   0.27       8.45 f
+  U2900/Y (INVX0_RVT)                                     0.34       8.79 r
+  U2912/Y (AO22X1_RVT)                                    0.26       9.05 r
+  U2913/Y (OA221X1_RVT)                                   0.24       9.29 r
+  U2914/Y (AO22X1_RVT)                                    0.19       9.48 r
+  U2915/Y (NAND2X0_RVT)                                   0.17       9.65 f
+  u_axi_tx_lines_in_fifo_reg_2_/D (DFFARX1_RVT)           0.15       9.80 f
+  data arrival time                                                  9.80
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_axi_tx_lines_in_fifo_reg_2_/CLK (DFFARX1_RVT)         0.00       9.90 r
+  library setup time                                     -0.03       9.87
+  data required time                                                 9.87
+  --------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -9.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_axi_tx_u_fifo/rptr_reg_0_
+              (rising edge-triggered flip-flop clocked by byte_clk)
+  Endpoint: u_p2b_line_count_reg_5_
+            (rising edge-triggered flip-flop clocked by byte_clk)
+  Path Group: byte_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock byte_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/rptr_reg_0_/CLK (DFFARX1_RVT)           0.00       0.00 r
+  u_axi_tx_u_fifo/rptr_reg_0_/QN (DFFARX1_RVT)            0.08       0.08 r
+  u_axi_tx_u_fifo/U8492/Y (AND3X1_RVT)                    0.29       0.37 r
+  u_axi_tx_u_fifo/U8493/Y (NBUFFX2_RVT)                   0.53       0.89 r
+  u_axi_tx_u_fifo/U8722/Y (AND2X1_RVT)                    0.37       1.27 r
+  u_axi_tx_u_fifo/U3894/Y (INVX0_RVT)                     0.86       2.13 f
+  u_axi_tx_u_fifo/U3895/Y (INVX4_RVT)                     1.07       3.19 r
+  u_axi_tx_u_fifo/U10799/Y (NBUFFX2_RVT)                  1.84       5.03 r
+  u_axi_tx_u_fifo/U30470/Y (AO22X1_RVT)                   1.57       6.61 r
+  u_axi_tx_u_fifo/U30471/Y (NOR3X0_RVT)                   0.23       6.83 f
+  u_axi_tx_u_fifo/U30477/Y (NAND4X0_RVT)                  0.18       7.02 r
+  u_axi_tx_u_fifo/U6960/Y (OR4X1_RVT)                     0.24       7.25 r
+  u_axi_tx_u_fifo/U30496/Y (OR3X1_RVT)                    0.19       7.44 r
+  u_axi_tx_u_fifo/U30497/Y (AOI22X1_RVT)                  0.20       7.64 f
+  u_axi_tx_u_fifo/U30662/Y (NAND3X0_RVT)                  0.17       7.81 r
+  u_axi_tx_u_fifo/U30663/Y (OR3X1_RVT)                    0.22       8.03 r
+  u_axi_tx_u_fifo/U30664/Y (AO22X1_RVT)                   0.19       8.22 r
+  u_axi_tx_u_fifo/rdata[24] (async_fifo_behavioral_DEPTH2048_WIDTH26)
+                                                          0.00       8.22 r
+  U2537/Y (OA21X1_RVT)                                    0.28       8.50 r
+  U2548/Y (AND2X1_RVT)                                    0.29       8.79 r
+  U2549/Y (NBUFFX2_RVT)                                   0.27       9.06 r
+  U3850/Y (AND2X1_RVT)                                    0.34       9.40 r
+  U3852/Y (AO22X1_RVT)                                    0.21       9.62 r
+  u_p2b_line_count_reg_5_/D (DFFARX1_RVT)                 0.15       9.76 r
+  data arrival time                                                  9.76
+
+  clock byte_clk (rise edge)                             10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_p2b_line_count_reg_5_/CLK (DFFARX1_RVT)               0.00       9.90 r
+  library setup time                                     -0.03       9.87
+  data required time                                                 9.87
+  --------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -9.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: tx_apb_penable
+              (input port clocked by pclk)
+  Endpoint: tx_apb_prdata[1]
+            (output port clocked by pclk)
+  Path Group: pclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock pclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.00       4.00 r
+  tx_apb_penable (in)                      0.00       4.00 r
+  U2467/Y (INVX0_RVT)                      0.17       4.17 f
+  U2625/Y (NOR4X1_RVT)                     0.22       4.39 r
+  U2627/Y (NAND4X0_RVT)                    0.20       4.59 f
+  U2628/Y (NOR4X1_RVT)                     0.23       4.82 r
+  U2629/Y (AND3X1_RVT)                     0.17       4.99 r
+  U3444/Y (AND2X1_RVT)                     0.23       5.22 r
+  U3446/Y (OA221X1_RVT)                    0.21       5.43 r
+  tx_apb_prdata[1] (out)                   0.00       5.43 r
+  data arrival time                                   5.43
+
+  clock pclk (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.10      19.90
+  output external delay                   -4.00      15.90
+  data required time                                 15.90
+  -----------------------------------------------------------
+  data required time                                 15.90
+  data arrival time                                  -5.43
+  -----------------------------------------------------------
+  slack (MET)                                        10.47
+
+
+  Startpoint: tx_apb_penable
+              (input port clocked by pclk)
+  Endpoint: tx_apb_prdata[0]
+            (output port clocked by pclk)
+  Path Group: pclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock pclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.00       4.00 r
+  tx_apb_penable (in)                      0.00       4.00 r
+  U2467/Y (INVX0_RVT)                      0.17       4.17 f
+  U2625/Y (NOR4X1_RVT)                     0.22       4.39 r
+  U2627/Y (NAND4X0_RVT)                    0.20       4.59 f
+  U2628/Y (NOR4X1_RVT)                     0.23       4.82 r
+  U2629/Y (AND3X1_RVT)                     0.17       4.99 r
+  U3444/Y (AND2X1_RVT)                     0.23       5.22 r
+  U3445/Y (OA221X1_RVT)                    0.21       5.43 r
+  tx_apb_prdata[0] (out)                   0.00       5.43 r
+  data arrival time                                   5.43
+
+  clock pclk (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.10      19.90
+  output external delay                   -4.00      15.90
+  data required time                                 15.90
+  -----------------------------------------------------------
+  data required time                                 15.90
+  data arrival time                                  -5.43
+  -----------------------------------------------------------
+  slack (MET)                                        10.47
+
+
+  Startpoint: tx_apb_penable
+              (input port clocked by pclk)
+  Endpoint: u_regfile_scram_enb_reg
+            (rising edge-triggered flip-flop clocked by pclk)
+  Path Group: pclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 r
+  tx_apb_penable (in)                                     0.00       4.00 r
+  U2467/Y (INVX0_RVT)                                     0.17       4.17 f
+  U2625/Y (NOR4X1_RVT)                                    0.22       4.39 r
+  U2627/Y (NAND4X0_RVT)                                   0.20       4.59 f
+  U2628/Y (NOR4X1_RVT)                                    0.23       4.82 r
+  U2629/Y (AND3X1_RVT)                                    0.17       4.99 r
+  U2630/Y (AND2X1_RVT)                                    0.23       5.22 r
+  U2632/Y (NAND3X0_RVT)                                   0.23       5.45 f
+  U2503/Y (MUX21X1_RVT)                                   0.47       5.92 f
+  u_regfile_scram_enb_reg/D (DFFASRX1_RVT)                0.15       6.06 f
+  data arrival time                                                  6.06
+
+  clock pclk (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.10      19.90
+  u_regfile_scram_enb_reg/CLK (DFFASRX1_RVT)              0.00      19.90 r
+  library setup time                                     -0.03      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                 -6.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                       13.80
+
+
+  Startpoint: tx_apb_penable
+              (input port clocked by pclk)
+  Endpoint: u_regfile_crc_enb_reg
+            (rising edge-triggered flip-flop clocked by pclk)
+  Path Group: pclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 r
+  tx_apb_penable (in)                                     0.00       4.00 r
+  U2467/Y (INVX0_RVT)                                     0.17       4.17 f
+  U2625/Y (NOR4X1_RVT)                                    0.22       4.39 r
+  U2627/Y (NAND4X0_RVT)                                   0.20       4.59 f
+  U2628/Y (NOR4X1_RVT)                                    0.23       4.82 r
+  U2629/Y (AND3X1_RVT)                                    0.17       4.99 r
+  U2630/Y (AND2X1_RVT)                                    0.23       5.22 r
+  U2632/Y (NAND3X0_RVT)                                   0.23       5.45 f
+  U4820/Y (INVX0_RVT)                                     0.24       5.68 r
+  U4821/Y (AO22X1_RVT)                                    0.19       5.87 r
+  u_regfile_crc_enb_reg/D (DFFASRX1_RVT)                  0.15       6.02 r
+  data arrival time                                                  6.02
+
+  clock pclk (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.10      19.90
+  u_regfile_crc_enb_reg/CLK (DFFASRX1_RVT)                0.00      19.90 r
+  library setup time                                     -0.03      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                 -6.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                       13.85
+
+
+  Startpoint: tx_apb_penable
+              (input port clocked by pclk)
+  Endpoint: u_regfile_tx_en_reg
+            (rising edge-triggered flip-flop clocked by pclk)
+  Path Group: pclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 r
+  tx_apb_penable (in)                                     0.00       4.00 r
+  U2467/Y (INVX0_RVT)                                     0.17       4.17 f
+  U2625/Y (NOR4X1_RVT)                                    0.22       4.39 r
+  U2627/Y (NAND4X0_RVT)                                   0.20       4.59 f
+  U2628/Y (NOR4X1_RVT)                                    0.23       4.82 r
+  U2629/Y (AND3X1_RVT)                                    0.17       4.99 r
+  U2630/Y (AND2X1_RVT)                                    0.23       5.22 r
+  U2631/Y (AND3X1_RVT)                                    0.22       5.43 r
+  U2502/Y (MUX21X1_RVT)                                   0.40       5.84 r
+  u_regfile_tx_en_reg/D (DFFASRX1_RVT)                    0.15       5.99 r
+  data arrival time                                                  5.99
+
+  clock pclk (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.10      19.90
+  u_regfile_tx_en_reg/CLK (DFFASRX1_RVT)                  0.00      19.90 r
+  library setup time                                     -0.03      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                 -5.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                       13.88
+
+
+  Startpoint: tx_apb_penable
+              (input port clocked by pclk)
+  Endpoint: u_regfile_sw_rst_reg
+            (rising edge-triggered flip-flop clocked by pclk)
+  Path Group: pclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 r
+  tx_apb_penable (in)                                     0.00       4.00 r
+  U2467/Y (INVX0_RVT)                                     0.17       4.17 f
+  U2625/Y (NOR4X1_RVT)                                    0.22       4.39 r
+  U2627/Y (NAND4X0_RVT)                                   0.20       4.59 f
+  U2628/Y (NOR4X1_RVT)                                    0.23       4.82 r
+  U2629/Y (AND3X1_RVT)                                    0.17       4.99 r
+  U2630/Y (AND2X1_RVT)                                    0.23       5.22 r
+  U2631/Y (AND3X1_RVT)                                    0.22       5.43 r
+  U3450/Y (AND2X1_RVT)                                    0.22       5.66 r
+  u_regfile_sw_rst_reg/D (DFFARX1_RVT)                    0.15       5.81 r
+  data arrival time                                                  5.81
+
+  clock pclk (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.10      19.90
+  u_regfile_sw_rst_reg/CLK (DFFARX1_RVT)                  0.00      19.90 r
+  library setup time                                     -0.03      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                 -5.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                       14.07
+
+
+  Startpoint: sync_regs_apb_reg_0_/CLK
+              (internal path startpoint clocked by pclk)
+  Endpoint: sync_regs_apb_reg_1_
+            (rising edge-triggered flip-flop clocked by pclk)
+  Path Group: pclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  sync_regs_apb_reg_0_/CLK (DFFARX1_RVT)                  0.00       0.00 r
+  sync_regs_apb_reg_0_/Q (DFFARX1_RVT)                    0.09       0.09 r
+  sync_regs_apb_reg_1_/D (DFFASRX1_RVT)                   0.15       0.24 r
+  data arrival time                                                  0.24
+
+  clock pclk (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.10      19.90
+  sync_regs_apb_reg_1_/CLK (DFFASRX1_RVT)                 0.00      19.90 r
+  library setup time                                     -0.03      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                 -0.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                       19.63
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__22_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105028/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__22_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__22_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__14_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105020/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__14_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__14_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__7_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105012/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__7_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__7_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__6_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105011/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__6_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__6_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__5_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105010/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__5_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__5_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__4_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105009/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__4_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__4_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__3_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105008/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__3_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__3_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__2_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105007/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__2_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__2_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__1_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105006/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__1_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__1_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_axi_tx_u_fifo/wptr_reg_0_
+              (rising edge-triggered flip-flop clocked by pixel_clk)
+  Endpoint: u_axi_tx_u_fifo/mem_bank0_reg_135__0_
+            (rising edge-triggered flip-flop clocked by pixel_clk)
+  Path Group: pixel_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+  async_fifo_behavioral_DEPTH2048_WIDTH26
+                     1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock pixel_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_axi_tx_u_fifo/wptr_reg_0_/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  u_axi_tx_u_fifo/wptr_reg_0_/Q (DFFARX1_RVT)             0.11       0.11 f
+  u_axi_tx_u_fifo/U15255/Y (AND3X1_RVT)                   0.47       0.58 f
+  u_axi_tx_u_fifo/U49615/Y (AND2X1_RVT)                   0.38       0.96 f
+  u_axi_tx_u_fifo/U2747/Y (NBUFFX2_RVT)                   0.83       1.79 f
+  u_axi_tx_u_fifo/U105002/Y (AND2X1_RVT)                  1.62       3.42 f
+  u_axi_tx_u_fifo/U105017/Y (INVX2_RVT)                   1.80       5.22 r
+  u_axi_tx_u_fifo/U105005/Y (AO22X1_RVT)                  1.19       6.41 r
+  u_axi_tx_u_fifo/mem_bank0_reg_135__0_/D (DFFASRX1_RVT)
+                                                          0.15       6.56 r
+  data arrival time                                                  6.56
+
+  clock pixel_clk (rise edge)                             6.70       6.70
+  clock network delay (ideal)                             0.00       6.70
+  clock uncertainty                                      -0.10       6.60
+  u_axi_tx_u_fifo/mem_bank0_reg_135__0_/CLK (DFFASRX1_RVT)
+                                                          0.00       6.60 r
+  library setup time                                     -0.04       6.56
+  data required time                                                 6.56
+  --------------------------------------------------------------------------
+  data required time                                                 6.56
+  data arrival time                                                 -6.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: u_tx_fifo0_rd_ptr_gray_reg_1_
+            (rising edge-triggered flip-flop clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)                      0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  ppi_tx_ClkReadyHS (in)                                  0.00       2.00 r
+  U2679/Y (OA21X1_RVT)                                    0.22       2.22 r
+  U2680/Y (NAND2X0_RVT)                                   0.24       2.47 f
+  U2681/Y (INVX2_RVT)                                     0.98       3.44 r
+  U4097/Y (MUX41X1_RVT)                                   4.43       7.87 r
+  u_tx_fifo0_rd_ptr_gray_reg_1_/D (DFFARX1_RVT)           0.15       8.02 r
+  data arrival time                                                  8.02
+
+  clock ppi_tx_ByteClkHS (rise edge)                     10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_tx_fifo0_rd_ptr_gray_reg_1_/CLK (DFFARX1_RVT)         0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -8.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.84
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: u_tx_fifo0_rd_ptr_gray_reg_3_
+            (rising edge-triggered flip-flop clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)                      0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  ppi_tx_ClkReadyHS (in)                                  0.00       2.00 r
+  U2679/Y (OA21X1_RVT)                                    0.22       2.22 r
+  U2680/Y (NAND2X0_RVT)                                   0.24       2.47 f
+  U2681/Y (INVX2_RVT)                                     0.98       3.44 r
+  U4107/Y (MUX41X1_RVT)                                   4.43       7.87 r
+  u_tx_fifo0_rd_ptr_gray_reg_3_/D (DFFARX1_RVT)           0.15       8.02 r
+  data arrival time                                                  8.02
+
+  clock ppi_tx_ByteClkHS (rise edge)                     10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_tx_fifo0_rd_ptr_gray_reg_3_/CLK (DFFARX1_RVT)         0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -8.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.84
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: u_tx_fifo3_rd_ptr_gray_reg_1_
+            (rising edge-triggered flip-flop clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)                      0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  ppi_tx_ClkReadyHS (in)                                  0.00       2.00 r
+  U2670/Y (OA21X1_RVT)                                    0.22       2.22 r
+  U2671/Y (NAND2X0_RVT)                                   0.24       2.47 f
+  U2672/Y (INVX2_RVT)                                     0.98       3.44 r
+  U4280/Y (MUX41X1_RVT)                                   4.43       7.87 r
+  u_tx_fifo3_rd_ptr_gray_reg_1_/D (DFFARX1_RVT)           0.15       8.02 r
+  data arrival time                                                  8.02
+
+  clock ppi_tx_ByteClkHS (rise edge)                     10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_tx_fifo3_rd_ptr_gray_reg_1_/CLK (DFFARX1_RVT)         0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -8.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.84
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: u_tx_fifo3_rd_ptr_gray_reg_3_
+            (rising edge-triggered flip-flop clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)                      0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  ppi_tx_ClkReadyHS (in)                                  0.00       2.00 r
+  U2670/Y (OA21X1_RVT)                                    0.22       2.22 r
+  U2671/Y (NAND2X0_RVT)                                   0.24       2.47 f
+  U2672/Y (INVX2_RVT)                                     0.98       3.44 r
+  U4290/Y (MUX41X1_RVT)                                   4.43       7.87 r
+  u_tx_fifo3_rd_ptr_gray_reg_3_/D (DFFARX1_RVT)           0.15       8.02 r
+  data arrival time                                                  8.02
+
+  clock ppi_tx_ByteClkHS (rise edge)                     10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_tx_fifo3_rd_ptr_gray_reg_3_/CLK (DFFARX1_RVT)         0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -8.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.84
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: u_tx_fifo2_rd_ptr_gray_reg_1_
+            (rising edge-triggered flip-flop clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)                      0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  ppi_tx_ClkReadyHS (in)                                  0.00       2.00 r
+  U2688/Y (OA21X1_RVT)                                    0.22       2.22 r
+  U2689/Y (NAND2X0_RVT)                                   0.24       2.47 f
+  U2690/Y (INVX2_RVT)                                     0.98       3.44 r
+  U4465/Y (MUX41X1_RVT)                                   4.43       7.87 r
+  u_tx_fifo2_rd_ptr_gray_reg_1_/D (DFFARX1_RVT)           0.15       8.02 r
+  data arrival time                                                  8.02
+
+  clock ppi_tx_ByteClkHS (rise edge)                     10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_tx_fifo2_rd_ptr_gray_reg_1_/CLK (DFFARX1_RVT)         0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -8.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.84
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: u_tx_fifo2_rd_ptr_gray_reg_3_
+            (rising edge-triggered flip-flop clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)                      0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  ppi_tx_ClkReadyHS (in)                                  0.00       2.00 r
+  U2688/Y (OA21X1_RVT)                                    0.22       2.22 r
+  U2689/Y (NAND2X0_RVT)                                   0.24       2.47 f
+  U2690/Y (INVX2_RVT)                                     0.98       3.44 r
+  U4475/Y (MUX41X1_RVT)                                   4.43       7.87 r
+  u_tx_fifo2_rd_ptr_gray_reg_3_/D (DFFARX1_RVT)           0.15       8.02 r
+  data arrival time                                                  8.02
+
+  clock ppi_tx_ByteClkHS (rise edge)                     10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_tx_fifo2_rd_ptr_gray_reg_3_/CLK (DFFARX1_RVT)         0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -8.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.84
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: u_tx_fifo1_rd_ptr_gray_reg_1_
+            (rising edge-triggered flip-flop clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)                      0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  ppi_tx_ClkReadyHS (in)                                  0.00       2.00 r
+  U2661/Y (OA21X1_RVT)                                    0.22       2.22 r
+  U2662/Y (NAND2X0_RVT)                                   0.24       2.47 f
+  U2663/Y (INVX2_RVT)                                     0.98       3.44 r
+  U4649/Y (MUX41X1_RVT)                                   4.43       7.87 r
+  u_tx_fifo1_rd_ptr_gray_reg_1_/D (DFFARX1_RVT)           0.15       8.02 r
+  data arrival time                                                  8.02
+
+  clock ppi_tx_ByteClkHS (rise edge)                     10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_tx_fifo1_rd_ptr_gray_reg_1_/CLK (DFFARX1_RVT)         0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -8.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.84
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: u_tx_fifo1_rd_ptr_gray_reg_3_
+            (rising edge-triggered flip-flop clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)                      0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  ppi_tx_ClkReadyHS (in)                                  0.00       2.00 r
+  U2661/Y (OA21X1_RVT)                                    0.22       2.22 r
+  U2662/Y (NAND2X0_RVT)                                   0.24       2.47 f
+  U2663/Y (INVX2_RVT)                                     0.98       3.44 r
+  U4659/Y (MUX41X1_RVT)                                   4.43       7.87 r
+  u_tx_fifo1_rd_ptr_gray_reg_3_/D (DFFARX1_RVT)           0.15       8.02 r
+  data arrival time                                                  8.02
+
+  clock ppi_tx_ByteClkHS (rise edge)                     10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  u_tx_fifo1_rd_ptr_gray_reg_3_/CLK (DFFARX1_RVT)         0.00       9.90 r
+  library setup time                                     -0.04       9.86
+  data required time                                                 9.86
+  --------------------------------------------------------------------------
+  data required time                                                 9.86
+  data arrival time                                                 -8.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.84
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: ppi_tx_DataHS_0[1]
+            (output port clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)       0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 f
+  ppi_tx_ClkReadyHS (in)                   0.00       2.00 f
+  U2679/Y (OA21X1_RVT)                     0.22       2.22 f
+  U2680/Y (NAND2X0_RVT)                    0.24       2.46 r
+  U2681/Y (INVX2_RVT)                      0.97       3.44 f
+  U3371/Y (AND2X1_RVT)                     0.92       4.36 f
+  ppi_tx_DataHS_0[1] (out)                 0.00       4.36 f
+  data arrival time                                   4.36
+
+  clock ppi_tx_ByteClkHS (rise edge)      10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  output external delay                   -2.00       7.90
+  data required time                                  7.90
+  -----------------------------------------------------------
+  data required time                                  7.90
+  data arrival time                                  -4.36
+  -----------------------------------------------------------
+  slack (MET)                                         3.54
+
+
+  Startpoint: ppi_tx_ClkReadyHS
+              (input port clocked by ppi_tx_ByteClkHS)
+  Endpoint: ppi_tx_DataHS_0[0]
+            (output port clocked by ppi_tx_ByteClkHS)
+  Path Group: ppi_tx_ByteClkHS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mipi_tx_top        1000000               saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ppi_tx_ByteClkHS (rise edge)       0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 f
+  ppi_tx_ClkReadyHS (in)                   0.00       2.00 f
+  U2679/Y (OA21X1_RVT)                     0.22       2.22 f
+  U2680/Y (NAND2X0_RVT)                    0.24       2.46 r
+  U2681/Y (INVX2_RVT)                      0.97       3.44 f
+  U3359/Y (AND2X1_RVT)                     0.92       4.36 f
+  ppi_tx_DataHS_0[0] (out)                 0.00       4.36 f
+  data arrival time                                   4.36
+
+  clock ppi_tx_ByteClkHS (rise edge)      10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  output external delay                   -2.00       7.90
+  data required time                                  7.90
+  -----------------------------------------------------------
+  data required time                                  7.90
+  data arrival time                                  -4.36
+  -----------------------------------------------------------
+  slack (MET)                                         3.54
+
+
+1

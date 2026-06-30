@@ -1,0 +1,20 @@
+Recursive Coverage Report Summary Data by DU
+
+=================================================================================
+=== Design Unit: work.tb_mipi_system_loopback
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                       3         3         0   100.00%
+    Branches                       892       754       138    84.52%
+    Conditions                     228       142        86    62.28%
+    Directives                       3         3         0   100.00%
+    Expressions                    420       275       145    65.47%
+    FSM States                      35        33         2    94.28%
+    FSM Transitions                 68        41        27    60.29%
+    Statements                    1546      1416       130    91.59%
+    Toggles                      11300      7270      4030    64.33%
+
+
+Total Coverage By Design Unit (filtered view): 80.31%
+

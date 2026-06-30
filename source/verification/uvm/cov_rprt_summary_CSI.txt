@@ -1,0 +1,19 @@
+Recursive Coverage Report Summary Data by DU
+
+=================================================================================
+=== Design Unit: work.csi_tb_top
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                       5         5         0   100.00%
+    Branches                       822       692       130    84.18%
+    Directives                       5         5         0   100.00%
+    Expressions                    416       295       121    70.91%
+    FSM States                      35        33         2    94.28%
+    FSM Transitions                 68        40        28    58.82%
+    Statements                    1209      1092       117    90.32%
+    Toggles                      10496      7010      3486    66.78%
+
+
+Total Coverage By Design Unit (filtered view): 83.16%
+

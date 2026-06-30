@@ -1,0 +1,136 @@
+ 
+****************************************
+Report : qor
+Design : mipi_tx_top
+Version: X-2025.06-SP4
+Date   : Tue Apr 28 13:13:46 2026
+****************************************
+
+
+  Timing Path Group 'SYS_CLK_CRITICAL'
+  -----------------------------------
+  Levels of Logic:               7.00
+  Critical Path Length:          2.37
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      2.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'byte_clk'
+  -----------------------------------
+  Levels of Logic:              16.00
+  Critical Path Length:          9.83
+  Critical Path Slack:           0.03
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'pclk'
+  -----------------------------------
+  Levels of Logic:               7.00
+  Critical Path Length:          1.43
+  Critical Path Slack:          10.47
+  Critical Path Clk Period:     20.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'pixel_clk'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          6.56
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      6.70
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'ppi_tx_ByteClkHS'
+  -----------------------------------
+  Levels of Logic:               4.00
+  Critical Path Length:          6.02
+  Critical Path Slack:           1.84
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:         72
+  Leaf Cell Count:             166240
+  Buf/Inv Cell Count:           17812
+  Buf Cell Count:                8653
+  Inv Cell Count:                9159
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:    111655
+  Sequential Cell Count:        54585
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   269086.651968
+  Noncombinational Area:
+                        415940.967133
+  Buf/Inv Area:          29483.500513
+  Total Buffer Area:         17663.26
+  Total Inverter Area:       11820.24
+  Macro/Black Box Area:      0.000000
+  Net Area:             729658.638006
+  -----------------------------------
+  Cell Area:            685027.619101
+  Design Area:         1414686.257107
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:        220733
+  Nets With Violations:             9
+  Max Trans Violations:             0
+  Max Cap Violations:               9
+  -----------------------------------
+
+
+  Hostname: academyserver03
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.06
+  Logic Optimization:                  5.83
+  Mapping Optimization:              177.36
+  -----------------------------------------
+  Overall Compile Time:              339.59
+  Overall Compile Wall Clock Time:   354.37
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

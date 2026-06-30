@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : mipi_tx_top
+Version: X-2025.06-SP4
+Date   : Tue Apr 28 13:13:29 2026
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/users/svgpdd26zwuablsayed/MIPI_Project/lib/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                          321
+Number of nets:                        220793
+Number of cells:                       220339
+Number of combinational cells:         111654
+Number of sequential cells:             54586
+Number of macros/black boxes:               0
+Number of buf/inv:                      17812
+Number of references:                      49
+
+Combinational area:             269086.651968
+Buf/Inv area:                    29483.500513
+Noncombinational area:          415940.967133
+Macro/Black Box area:                0.000000
+Net Interconnect area:          729658.638006
+
+Total cell area:                685027.619101
+Total area:                    1414686.257107
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black-
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  ---------------------------------------
+mipi_tx_top                       685027.6191    100.0    6290.3182    9281.0848  0.0000  mipi_tx_top
+u_axi_tx_u_fifo                   669456.2161     97.7  262796.3338  406659.8823  0.0000  async_fifo_behavioral_DEPTH2048_WIDTH26
+--------------------------------  -----------  -------  -----------  -----------  ------  ---------------------------------------
+Total                                                   269086.6520  415940.9671  0.0000
+
+1

@@ -1,0 +1,258 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /csi_tb_top/u_csi_sva
+=== Design Unit: work.csi_sva
+=================================================================================
+
+Directive Coverage:
+    Directives                       5         5         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/csi_tb_top/u_csi_sva/cover__rx_stream_terminates 
+                                         csi_sva Verilog  SVA  csi_sva.sv(109)   41 Covered   
+/csi_tb_top/u_csi_sva/cover__tx_valid_low_after_reset 
+                                         csi_sva Verilog  SVA  csi_sva.sv(97)     1 Covered   
+/csi_tb_top/u_csi_sva/cover__no_ecc_double_error 
+                                         csi_sva Verilog  SVA  csi_sva.sv(84)  16551908 Covered   
+/csi_tb_top/u_csi_sva/cover__crc_ok_when_done 
+                                         csi_sva Verilog  SVA  csi_sva.sv(71)  2003 Covered   
+/csi_tb_top/u_csi_sva/cover__rx_sof_single_beat 
+                                         csi_sva Verilog  SVA  csi_sva.sv(57)    41 Covered   
+
+=================================================================================
+=== Instance: /csi_coverage_pkg
+=== Design Unit: work.csi_coverage_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      5        na        na   100.00%
+        Coverpoints/Crosses         11        na        na        na
+            Covergroup Bins         23        23         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /csi_coverage_pkg/csi_coverage/lane_config_cg 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     3          3          -                      
+    missing/total bins:                                     0          3          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_lanes                               100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin lane1                                     1200000          1          -    Covered              
+        bin lane2                                     1200000          1          -    Covered              
+        bin lane4                                     1603037          1          -    Covered              
+ TYPE /csi_coverage_pkg/csi_coverage/data_type_cg     100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_dt                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin raw8                                      1000000          1          -    Covered              
+        bin raw10                                     1000000          1          -    Covered              
+ TYPE /csi_coverage_pkg/csi_coverage/frame_ctrl_cg    100.00%        100          -    Covered              
+    covered/total bins:                                     7          7          -                      
+    missing/total bins:                                     0          7          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_sof                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin sof                                            41          1          -    Covered              
+        bin no_sof                                    4002996          1          -    Covered              
+    Coverpoint cp_eol                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin eol                                          4003          1          -    Covered              
+        bin no_eol                                    3999034          1          -    Covered              
+    Cross cx_sof_eol                                  100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <no_sof,no_eol>                       3998993          1          -    Covered              
+            bin <sof,no_eol>                               41          1          -    Covered              
+            bin <no_sof,eol>                             4003          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin impossible_1_pixel_frame             0                     -    ZERO                 
+ TYPE /csi_coverage_pkg/csi_coverage/features_cg      100.00%        100          -    Covered              
+    covered/total bins:                                     8          8          -                      
+    missing/total bins:                                     0          8          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_crc                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin on                                        2003037          1          -    Covered              
+        bin off                                       2000000          1          -    Covered              
+    Coverpoint cp_scram                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin on                                        2403037          1          -    Covered              
+        bin off                                       1600000          1          -    Covered              
+    Cross cx_feat                                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <off,off>                              800000          1          -    Covered              
+            bin <on,off>                               800000          1          -    Covered              
+            bin <off,on>                              1200000          1          -    Covered              
+            bin <on,on>                               1203037          1          -    Covered              
+ TYPE /csi_coverage_pkg/csi_coverage/integrity_cg     100.00%        100          -    Covered              
+    covered/total bins:                                     3          3          -                      
+    missing/total bins:                                     0          3          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_crc_result                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin crc_fail                                 0                     -    ZERO                 
+        bin crc_pass                                     2003          1          -    Covered              
+    Coverpoint cp_ecc_single                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin ecc_corrected                            0                     -    ZERO                 
+        bin no_ecc_single                                2003          1          -    Covered              
+    Coverpoint cp_ecc_double                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin ecc_error                                0                     -    ZERO                 
+        bin no_ecc_double                                2003          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /csi_coverage_pkg/csi_coverage/lane_config_cg 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     3          3          -                      
+    missing/total bins:                                     0          3          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_lanes                               100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin lane1                                     1200000          1          -    Covered              
+        bin lane2                                     1200000          1          -    Covered              
+        bin lane4                                     1603037          1          -    Covered              
+ TYPE /csi_coverage_pkg/csi_coverage/data_type_cg     100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_dt                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin raw8                                      1000000          1          -    Covered              
+        bin raw10                                     1000000          1          -    Covered              
+ TYPE /csi_coverage_pkg/csi_coverage/frame_ctrl_cg    100.00%        100          -    Covered              
+    covered/total bins:                                     7          7          -                      
+    missing/total bins:                                     0          7          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_sof                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin sof                                            41          1          -    Covered              
+        bin no_sof                                    4002996          1          -    Covered              
+    Coverpoint cp_eol                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin eol                                          4003          1          -    Covered              
+        bin no_eol                                    3999034          1          -    Covered              
+    Cross cx_sof_eol                                  100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <no_sof,no_eol>                       3998993          1          -    Covered              
+            bin <sof,no_eol>                               41          1          -    Covered              
+            bin <no_sof,eol>                             4003          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin impossible_1_pixel_frame             0                     -    ZERO                 
+ TYPE /csi_coverage_pkg/csi_coverage/features_cg      100.00%        100          -    Covered              
+    covered/total bins:                                     8          8          -                      
+    missing/total bins:                                     0          8          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_crc                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin on                                        2003037          1          -    Covered              
+        bin off                                       2000000          1          -    Covered              
+    Coverpoint cp_scram                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin on                                        2403037          1          -    Covered              
+        bin off                                       1600000          1          -    Covered              
+    Cross cx_feat                                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <off,off>                              800000          1          -    Covered              
+            bin <on,off>                               800000          1          -    Covered              
+            bin <off,on>                              1200000          1          -    Covered              
+            bin <on,on>                               1203037          1          -    Covered              
+ TYPE /csi_coverage_pkg/csi_coverage/integrity_cg     100.00%        100          -    Covered              
+    covered/total bins:                                     3          3          -                      
+    missing/total bins:                                     0          3          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_crc_result                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin crc_fail                                 0                     -    ZERO                 
+        bin crc_pass                                     2003          1          -    Covered              
+    Coverpoint cp_ecc_single                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin ecc_corrected                            0                     -    ZERO                 
+        bin no_ecc_single                                2003          1          -    Covered              
+    Coverpoint cp_ecc_double                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin ecc_error                                0                     -    ZERO                 
+        bin no_ecc_double                                2003          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 5
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/csi_tb_top/u_csi_sva/cover__rx_stream_terminates 
+                                         csi_sva Verilog  SVA  csi_sva.sv(109)   41 Covered   
+/csi_tb_top/u_csi_sva/cover__tx_valid_low_after_reset 
+                                         csi_sva Verilog  SVA  csi_sva.sv(97)     1 Covered   
+/csi_tb_top/u_csi_sva/cover__no_ecc_double_error 
+                                         csi_sva Verilog  SVA  csi_sva.sv(84)  16551908 Covered   
+/csi_tb_top/u_csi_sva/cover__crc_ok_when_done 
+                                         csi_sva Verilog  SVA  csi_sva.sv(71)  2003 Covered   
+/csi_tb_top/u_csi_sva/cover__rx_sof_single_beat 
+                                         csi_sva Verilog  SVA  csi_sva.sv(57)    41 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 5
+
+Total Coverage By Instance (filtered view): 100.00%
+
